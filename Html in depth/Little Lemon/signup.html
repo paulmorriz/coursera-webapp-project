@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bare Bones Layout</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="your Site Name">
+
+   
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type"  content="website">
+    <meta property="image" content="logo.png">
+    <meta property="og:url"   content="https://littlelemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Meditteranean restaurant, focused on traditional recipes served with a modern twist">
+    <meta property="og:locale" content="en_US"> 
+    <meta property="og:site_name"  content="Little Lemon">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!--Add your website name or logo here -->
+        <img src="logo.png">
+    </header>
+    <nav>
+        <!--Add your website navigation here - example below-->
+        <ul>
+            <li><a href= "index.html">Home</a></li>
+            <li><a href= "location.html">Location</a></li>
+            <li><a href= "blog.html">Blog</a></li>
+            <li><a href= "signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Sign Up</h1>
+        <form>
+            <div>
+                <label for="user_first_name">First Name</label><br>
+                <input type="text" id="user_first_name" name="user_first_name" required>
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label><br>
+                <input type="text" id="user_last_name" name="user_last_name"required>
+            </div>
+            <div>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email" name="user_email">
+            </div>
+            <div>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password" required minlength="5" maxlength="12">
+            </div>
+            <div>
+                <label for="user_confirm_password">Confirm Password</label><br>
+                <input type="password" id="user_confirm_password">
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+            <style>
+                input:invalid {
+                    border: 2px solid red;
+                }
+            </style>
+
+    </main>
+    <footer>
+        <!-- Add copyright notices and other footer content here -->
+        <p>Copyright 2023 Little Lemon Restaurant</p>
+    </footer>
+
+    <script src="js/script.css"></script>
+</body>
+</html>
