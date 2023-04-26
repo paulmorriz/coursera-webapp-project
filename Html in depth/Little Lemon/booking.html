@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Little Lemon Restaurant</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="your Site Name">
+
+   
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type"  content="website">
+    <meta property="image" content="logo.png">
+    <meta property="og:url"   content="https://littlelemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Meditteranean restaurant, focused on traditional recipes served with a modern twist">
+    <meta property="og:locale" content="en_US"> 
+    <meta property="og:site_name"  content="Little Lemon">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!--Add your website name or logo here -->
+        <img src="logo.png">
+    </header>
+    <nav>
+        <!--Add your website navigation here - example below-->
+        <ul>
+            <li><a href= "index.html">Home</a></li>
+            <li><a href= "location.html">Location</a></li>
+            <li><a href= "blog.html">Blog</a></li>
+            <li><a href= "signup.html">Sign Up</a></li>
+            <li><a href= "login.html">Log in</a></li>
+            <li><a href= "booking.html">Booking</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--Ini oke tapi bakalan bermasalah di settingan mobile view karena buttonnya kecil
+        oleh sebab itu kita kasih di dalam label (setting the text and button as the in
+        put area pakai <label></label>)
+        <h1>Book a table</h1>
+            <form method="POST">
+                <fieldset id="size">
+                    <input type="radio" value="2" name="size"> 2-person table
+                    <input type="radio" value="4" name="size" checked> 4-person table
+                    <input type="radio" value="6" name="size"> 6-person table
+                </fieldset>
+                <fieldset id="location">
+                    <input type="radio" value="Indoors" name="location" checked> Indoors
+                    <input type="radio" value="Outdoors" name="location"> Outdoors
+                </fieldset>
+                <button type="submit">Book table</button>
+            </form>
+
+            INI YANG OPTIMIZED TAPI NGGAK ADVANCED
+
+            <h1>Book a table</h1>
+            <form method="POST">
+                <fieldset id="size">
+                    <label>
+                        <input type="radio" value="2" name="size"> 2-person table
+                    </label>
+                    <label>
+                        <input type="radio" value="4" name="size" checked> 4-person table
+                    </label>
+                    <label>
+                        <input type="radio" value="6" name="size"> 6-person table
+                    </label>
+                </fieldset>
+                <fieldset id="location">
+                    <label>
+                        <input type="radio" value="Indoors" name="location" checked> Indoors
+                    </label>
+                    <label>
+                        <input type="radio" value="Outdoors" name="location"> Outdoors
+                    </label>
+                </fieldset>
+                <button type="submit">Book table</button>
+            </form>
+
+-->
+
+            <h1>Book a table</h1>
+            <form method="POST">
+                <div>
+                    <label for="booking date">Booking Date</label>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+                <div>
+                    <label for="booking_people">Number of People</label>
+                    <input type="range" id="bookign_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                    <output>4</output>
+                </div>
+                <div>
+                    <label for="booking_location">Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Downtown"></option>
+                        <option value="Uptown"></option>
+                    </datalist>
+                </div>
+    </main>
+    <footer>
+        <!-- Add copyright notices and other footer content here -->
+        <p>Copyright 2023 Little Lemon Restaurant</p>
+    </footer>
+
+    <script src="js/script.css"></script>
+</body>
+</html>
