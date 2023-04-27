@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Video Rating</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main>
+      <video width="320" height="240" controls>
+      <source src="video.mp4" type="video/mp4">
+      </video>
+
+      <div>
+        <label for="rating">Rating</label>
+        <input type="range" id="rating" name="rating" list="ratings" min="1" max="5"> <!-- The datalist element sets 
+          the values and labels possible within the range.   -->
+        <datalist id="ratings">
+          <option value="1" label="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </div>
+            <button type="submit">Submit Rating</button>
+   </main>
+
+  
+</body>
+
+</html>
