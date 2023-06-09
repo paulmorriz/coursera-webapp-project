@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -28,4 +29,18 @@
     background-color: lightsteelblue;
 }
 
+img {
+    border: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.item {
+    margin: 5px;
+}
     
