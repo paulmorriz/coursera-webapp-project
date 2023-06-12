@@ -1,0 +1,20 @@
+/* Links by default*/
+a:link {
+    color: blue;
+}
+
+/* Links by already visited*/
+a:visited {
+    color: blueviolet;
+}
+
+/* When hovering over the link with mouse*/
+a:hover {
+    color: green;
+}
+
+/* When link is selected*/
+a:active {
+    color: white;
+    background-color: black;
+}

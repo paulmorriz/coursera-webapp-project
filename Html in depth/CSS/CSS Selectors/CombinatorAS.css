@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Times New Roman';
+    background-color: #EDEFEE;
+}
+
+img + p{/*yang dipilih adalah paragraph yang terdekat dengan image bukan semua p, paragraph
+    pada gambar salad tidak dipilih karena terhalang div tags yang membuatnya jadi tidak adjecent dengan img*/
+    color: #495E57;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    font-size: small;
+    font-family: Verdana;
+}
