@@ -30,12 +30,12 @@
 }
 
 .letters:hover p:nth-child(even) {
-	transform: rotateY(360deg);
+	transform: rotateY(720deg);
 	transition: 0.5s;
 }
 
 .letters:hover p:nth-child(odd) {
-	transform: rotateX(360deg);
+	transform: rotateX(720deg);
 	transition: 1.5s;
 }
 
