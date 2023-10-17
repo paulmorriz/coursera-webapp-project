@@ -1,0 +1,186 @@
+.headerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+
+.title {
+    text-align:center
+}
+
+.footerlogo {
+    display: inline-block;
+    margin-left: 45%;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: peachpuff
+}
+
+.navbar li {
+    float: center;
+}
+
+.navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar a:hover {
+    background-color: white;
+}
+
+.container1 {
+    position: relative;
+    max-width: auto; 
+    margin: 0 auto; 
+  }
+  
+  .container1 .content1{
+    position: absolute; 
+    top: 0; 
+    background: peachpuff; 
+    background: rgba(244, 35, 3, 0.5); 
+    color: white; 
+    font-size: 28px;
+  }
+
+  .flip-box1 {
+    background-color: transparent;
+    width: 450px;
+    height: 300px;
+    perspective: 1000px; 
+  }
+
+  .flip-box2 {
+    background-color: transparent;
+    width: 450px;
+    height: 300px;
+    perspective: 1000px; 
+  }
+
+  .flip-box3 {
+    background-color: transparent;
+    width: 450px;
+    height: 300px;
+    perspective: 1000px; 
+  }
+
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box1:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box2:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box3:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: rgba(244, 35, 3, 0.5);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 64px;
+  }
+
+.minicontent {
+    font-size:24px;
+    text-align: center;
+}
+
+.textual {
+    border: 2px;
+    padding: 12px;
+}
+
+.textual:hover{
+    box-shadow: 7px 0px 27px black;
+}
+
+body {
+    background-color: #EDEFEE;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+
+}
+
+footer div {
+    flex: 1;
+}
+
+
